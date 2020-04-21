@@ -7,7 +7,7 @@ public class Savings extends Account {
      * @param accNum  account number
      * @param balance balance current account has
      */
-    public Savings(String accNum, double balance) {
-        super(accNum, balance);
+    public Savings(String accNum, double balance, double withdrawLimit) {
+        super(accNum, balance, withdrawLimit);
     }
 }
