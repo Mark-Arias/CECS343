@@ -13,7 +13,7 @@ public class tempMenu {
         while (flag != 'Q'){
             System.out.print("D)eposit\nW)ithdraw\nT)ransfer\nC)heck Balance\nQ)uit");
             System.out.print("\nSelect choice: ");
-            flag = kb.next().charAt(0);
+            flag = kb.next().toLowerCase().charAt(0);
         }
         return flag;
     }
