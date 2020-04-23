@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class ATM_Card {
     private String cardNumber;
-    private short PIN;
+    private int PIN;
 
-    public ATM_Card(String cardNumber, short PIN) {
+    public ATM_Card(String cardNumber, int PIN) {
         this.cardNumber = cardNumber;
         this.PIN = PIN;
     }
@@ -15,7 +15,7 @@ public class ATM_Card {
         return cardNumber;
     }
 
-    short getPIN() {
+    int getPIN() {
         return PIN;
     }
 
@@ -23,8 +23,13 @@ public class ATM_Card {
         this.cardNumber = cardNumber;
     }
 
-    void setPIN(short PIN) {
+    void setPIN(int PIN) {
         this.PIN = PIN;
+    }
+
+    @Override
+    public String toString() {
+        return "Card Number: " + cardNumber + "\nPIN: " + PIN;
     }
 
     @Override

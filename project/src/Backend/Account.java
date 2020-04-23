@@ -1,6 +1,7 @@
 package Backend;
+import java.io.Serializable;
 
-public abstract class Account {
+public abstract class Account implements Serializable {
 
     private String accNum;
     private double balance;
@@ -54,5 +55,10 @@ public abstract class Account {
     @Override
     public boolean equals(Object o) {
         return this == o;
+    }
+
+    @Override
+    public String toString() {
+        return "Account number: " + accNum;
     }
 }
