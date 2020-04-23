@@ -59,4 +59,13 @@ public class ATM {
     double checkBalance(Account acc) {
         return acc.getBalance();
     }
+
+    boolean withdrawFunds(Account acc, double amt) {
+        if (amt > checkBalance(acc)) {
+            return false;
+        } else {
+            acc.setBalance(acc.getBalance() - amt);
+            return true;
+        }
+    }
 }

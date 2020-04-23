@@ -15,6 +15,8 @@ public class tempMenu {
             System.out.print("\nSelect choice: ");
             flag = kb.next().toLowerCase().charAt(0);
         }
+        
+        kb.close();
         return flag;
     }
 }
