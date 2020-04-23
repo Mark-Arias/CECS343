@@ -35,4 +35,19 @@ public class ATM {
     void setATM_id(long ATM_id) {
         this.ATM_id = ATM_id;
     }
+
+    void setState(String state) {
+        this.state = state;
+    }
+
+    void setAccount(Account account) {
+        this.account = account;
+    }
+
+    void displayMenu(String state) {
+
+    }
+
+
+
 }

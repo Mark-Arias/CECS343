@@ -5,6 +5,7 @@ public abstract class Account {
     private String accNum;
     private double balance;
     private double withdrawLimit;
+    //private ATM_Card card;
 
     /**
      * Constructor for Account class
@@ -15,6 +16,7 @@ public abstract class Account {
         this.accNum = accNum;
         this.balance = balance;
         this.withdrawLimit = withdrawLimit;
+        //this.card = card;
     }
 
     String getAccNum() {
