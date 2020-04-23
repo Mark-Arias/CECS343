@@ -56,5 +56,7 @@ public class ATM {
         this.card = card;
     }
 
-
+    double checkBalance(Account acc) {
+        return acc.getBalance();
+    }
 }
