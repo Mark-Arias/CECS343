@@ -41,8 +41,4 @@ public class ATM_Card {
                 Objects.equals(cardNumber, atm_card.cardNumber);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cardNumber, PIN);
-    }
 }

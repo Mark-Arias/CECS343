@@ -4,6 +4,7 @@ public class Savings extends Account {
 
     /**
      * Constructor for Savings class
+     *
      * @param accNum  account number
      * @param balance balance current account has
      */

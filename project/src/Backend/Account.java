@@ -1,4 +1,5 @@
 package Backend;
+
 import java.io.Serializable;
 
 public abstract class Account implements Serializable {
@@ -10,7 +11,8 @@ public abstract class Account implements Serializable {
 
     /**
      * Constructor for Account class
-     * @param accNum account number
+     *
+     * @param accNum  account number
      * @param balance balance current account has
      */
     public Account(String accNum, double balance, double withdrawLimit, ATM_Card card) {
