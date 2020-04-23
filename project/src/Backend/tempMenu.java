@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class tempMenu {
+
+    private Map<ATM_Card, Account> map = new HashMap<>();
     public static void main(String args[]){
         System.out.println(getChoice());
     }

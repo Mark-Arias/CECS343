@@ -2,9 +2,8 @@ package Backend;
 
 public class ATM {
 
-    private String bankName;
+    private String bankName, state;
     private long ATM_id;
-    private String state;
     private Account account;
     private ATM_Card card;
 
@@ -76,7 +75,6 @@ public class ATM {
             acc.setBalance(acc.getBalance() + amt);
             return true;
         }
-
     }
 
     boolean transferFunds(Account origin, Account recipient, double amt) {
