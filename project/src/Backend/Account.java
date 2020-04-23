@@ -50,4 +50,9 @@ public abstract class Account {
     void setCard(ATM_Card card) {
         this.card = card;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        return this == o;
+    }
 }

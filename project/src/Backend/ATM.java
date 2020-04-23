@@ -68,4 +68,28 @@ public class ATM {
             return true;
         }
     }
+
+    boolean depositFunds(Account acc, double amt) {
+        if (amt < 0) {
+            return false;
+        } else {
+            acc.setBalance(acc.getBalance() + amt);
+            return true;
+        }
+
+    }
+
+    boolean transferFunds(Account origin, Account recipient, double amt) {
+        if (origin.equals(recipient)) {
+            System.out.println("Cannot transfer to the same account");
+            return false;
+        } else if (amt > origin.getBalance()) {
+            System.out.println("Cannot transfer funds more greater than present balance.\n");
+            return false;
+        } else {
+            origin.setBalance(origin.getBalance() - amt);
+            recipient.setBalance(recipient.getBalance() + amt);
+            return true;
+        }
+    }
 }
